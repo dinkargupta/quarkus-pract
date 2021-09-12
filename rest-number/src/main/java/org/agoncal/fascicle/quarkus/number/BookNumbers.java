@@ -38,7 +38,8 @@ public class BookNumbers {
   // end::adocJSonB[]
   public String ean13;
   // tag::adocJSonB[]
-  @JsonbTransient
+  //@JsonbTransient
+  @JsonbProperty("generationDate")
   // end::adocJSonB[]
   public Instant generationDate;
 }
